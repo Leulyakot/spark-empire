@@ -12,23 +12,6 @@ This repository is meant to document useful Spark jobs, patterns, and examples s
 - API-to-Spark ingestion patterns
 - Databricks-friendly notebook/job logic
 
-## Spark scripts
-
-- [Generic MuleSoft to Databricks Loader](./generic-mulesoft-to-databricks-loader.py)  
-  A config-driven Spark job that reads object metadata from Databricks tables, calls MuleSoft APIs, loads records into Delta tables, updates watermarks, and logs each run.
-
-- [Salesforce to Databricks Loader](./salesforce-to-databricks-loader.py)  
-  Spark job for loading Salesforce objects into Databricks tables with incremental watermark handling.
-
-- [Multi-Object Incremental Loader](./multi-object-incremental-loader.py)  
-  Generic Spark pattern for loading multiple source objects sequentially using a metadata-driven approach.
-
-- [Delta Watermark Manager](./delta-watermark-manager.py)  
-  Helper logic for reading and updating watermark timestamps in Databricks Delta tables.
-
-- [Job Run Logger](./job-run-logger.py)  
-  Utility script for logging Spark job execution details, status, row counts, timestamps, and errors into a Delta control table.
-
 ## Design principles
 
 - Keep jobs generic and easy to extend
